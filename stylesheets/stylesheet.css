@@ -28,14 +28,6 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
- <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
- <div id="texas"></div>
- var mymap = L.map('texas').setView([51.505, -0.09], 13);
- 
- 
- 
- 
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -293,14 +285,6 @@ Full-Width Styles
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-
-#texas { height: 180px; }
- L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'your.mapbox.project.id',
-    accessToken: 'your.mapbox.public.access.token'
-}).addTo(mymap);
 
 #header_wrap {
   background: #212121;
