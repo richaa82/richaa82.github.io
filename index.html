@@ -6,7 +6,8 @@
 
 <title>Rain gauge data</title>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
-
+<button type="button" onclick="alert('Hello world!')">Add Data</button>
+<button type="button" onclick="alert('Hello world!')">Export Data</button>
 <script>
 function initialize() {
   var mapProp = {
@@ -27,8 +28,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 google.maps.event.addListener(map, 'click', function( event ){
   alert( "Latitude: "+event.latLng.lat()+" "+", longitude: "+event.latLng.lng() ); 
 });
-<button type="button" onclick="alert('Hello world!')">Add Data</button>
-<button type="button" onclick="alert('Hello world!')">Export Data</button>
+
     
 
 </body>
