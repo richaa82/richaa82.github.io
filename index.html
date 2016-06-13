@@ -4,7 +4,7 @@
 
 <head>
 
-<title>Leaflet Web Map</title>
+<title>Rain gauge data</title>
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 
@@ -24,7 +24,9 @@
     <div id="map"></div>
 
 <script>
-    var map = L.map('map',{scrollWheelZoom:false}).setView([43.64701,-79.39425],10)
+    var map = L.map('map',{
+        center: [43.64701,-79.39425],
+        zoom: 10
     
     });
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
